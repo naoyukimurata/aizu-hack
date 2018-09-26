@@ -1,0 +1,8 @@
+<%= @name %></br>
+<%= image_tag @img %>
+<%= button_to "トップに戻る",
+{controller: 'quizzes', action: 'top'},
+{method: :get} %>
+<%= link_to 'もっと詳しく', 'http://www.u-aizu.ac.jp/research/faculty/detail?cd=' + @id %>
+
+<h4><a href="javascript:">jquery&css-test</a></h4>

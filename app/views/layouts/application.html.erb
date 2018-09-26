@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProfApp</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= partial_stylesheet_link_tag controller.controller_name, controller.action_name, @partial_css_disabled %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
+    <%= partial_js_link_tag controller.controller_name, controller.action_name, @partial_js_disabled %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
