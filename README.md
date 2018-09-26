@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 環境
+ruby2.5.0以上、gemにbundlerをインストールしていればOK(確認済み)
 
-Things you may want to cover:
+### 初期設定、コマンド
+git clone ~　後<br>
+* cd aizu-hack<br> 
+* bundle install --path vendor/bundle<br> 
+<br> 
+railsもbundlerで管理しているので、
+railsコマンドにbundle execが必要。<br>
+（例）ローカル起動<br>
+* bundle exec rails s
 
-* Ruby version
+### ディレクトリ構造
+quizzesコントローラーのtop,hint,ansアクション(ページ)に対応して、<br>
+css,jsファイルを個別に切り分けてある。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* cssファイル<br>
+app/assets/stylesheets/quizzes/*
+* jsファイル<br>
+app/assets/javascripts/quizzes/*
