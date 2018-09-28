@@ -1,8 +1,27 @@
-<%= @name %></br>
-<%= image_tag @img %>
-<%= button_to "トップに戻る",
-{controller: 'quizzes', action: 'top'},
-{method: :get} %>
-<%= link_to 'もっと詳しく', 'http://www.u-aizu.ac.jp/research/faculty/detail?cd=' + @id %>
+<div id="container">
+  <div id="header">
+    <h1 id="ans-txt">答えは、、、</h1>
+  </div>
 
-<h4><a href="javascript:">jquery&css-test</a></h4>
+  <div id="contents">
+
+    <div class="box side">
+      <p class="left"><%= @first %></p>
+    </div>
+
+    <p class="img01 waku02 radius side">
+      <%= image_tag(@img, :id => "img") %>
+    </p>
+    <div class="box side">
+     <p class="right side"><%= @last %></p>
+    </div>
+    </br>
+    <%= button_to "トップに戻る",
+    {controller: 'quizzes', action: 'top'},
+    {method: :get} %>
+    <!--%= link_to 'もっと詳しく', 'http://www.u-aizu.ac.jp/research/faculty/detail?cd=' + @id %-->
+  </div>
+
+  <div id="footer">
+  </div>
+</div>

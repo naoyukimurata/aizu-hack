@@ -1,3 +1,77 @@
-h4 {
-  color: green;
+body , html {
+    height: 100%;
+}
+#header {
+  text-align: center;
+  background-color: #70bccc;
+}
+#container {
+  width: 100%;
+  position: relative;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  background-image: image-url("back.jpg");
+}
+
+#contents {
+  margin-top: 5%;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.box {
+  width: 30%;
+  word-wrap: break-word;
+}
+.left {
+  padding-right: 7%;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Kokoro", cursive;
+  visibility : hidden;
+}
+.right {
+  padding-left: 7%;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Kokoro", cursive;
+  visibility : hidden;
+}
+.side {
+  display: inline-block;
+  vertical-align:  middle;
+}
+#img {
+  height: 500px;
+  width: 500px;
+}
+
+.waku01 {
+  padding:7px;
+  border:1px solid #ccc;
+  background:#fff;
+  box-shadow: 1px 1px 5px rgba(210,120,20,0.2);
+}
+
+
+
+#ans-txt {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+
+input {
+  background: #038F8F;
+  margin-top: 30px;
+  width:200px;
+  font-size:24px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  padding:8px 0 10px;
+  color: white;
+  border:1px solid white;
 }

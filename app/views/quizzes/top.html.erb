@@ -1,6 +1,94 @@
-<%= button_to "クイズスタート",
-{controller: 'quizzes', action: 'hint'},
-{method: :get} %>
+<div id="container">
+  <div id="header">
+    <div class="loopSlider">
+      <ul>
+        <li><a href="#"><%= image_tag("1.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("2.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("3.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("4.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("5.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("6.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("7.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("8.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("9.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("10.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("11.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("1.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("2.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("3.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("4.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("5.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("6.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("7.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("8.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("9.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("10.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("11.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("1.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("2.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("3.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("4.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("5.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("6.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("7.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("8.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("9.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("10.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("11.jpg",:class => "himg") %></a></li>
+      </ul>
+    </div>
 
+  </div>
 
-<h4><a href="javascript:">jquery&css-test</a></h4>
+  <div id="contents">
+    <hr/>
+    <%= image_tag("logo.svg", :class => 'logo') %>
+    <div id="title-box">
+     <%= image_tag("title.png", :class => 'title') %>
+     <%= button_to"スタート！",
+     {controller: 'quizzes', action: 'hint'},
+     {method: :get} %>
+    </div>
+  </div>
+
+  <div id="footer">
+    <hr/>
+    <div class="loopSlider">
+      <ul>
+        <li><a href="#"><%= image_tag("12.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("13.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("14.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("15.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("16.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("17.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("18.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("19.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("20.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("21.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("22.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("12.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("13.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("14.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("15.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("16.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("17.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("18.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("19.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("20.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("21.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("22.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("12.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("13.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("14.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("15.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("16.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("17.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("18.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("19.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("20.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("21.jpg",:class => "himg") %></a></li>
+        <li><a href="#"><%= image_tag("22.jpg",:class => "himg") %></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -41,7 +41,13 @@ class QuizzesController < ApplicationController
     html = open(url).read
     doc = Nokogiri::HTML.parse(html, nil, 'utf-8')
 
-    @name = doc.xpath("//span[@class='headline-primary']").text
+    name = doc.xpath("//span[@class='headline-primary']").text
+    @first = name.split("　")[0]
+    if name.count("　") == 2
+      @last = name.split("　")[1] + name.split("　")[2]
+    else
+      @last = name.split("　")[1]
+    end
     @img = 'http://www.u-aizu.ac.jp/upload/user/' + params[:id] + '.jpg'
   end
 end

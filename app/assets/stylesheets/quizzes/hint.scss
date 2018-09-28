@@ -1,3 +1,31 @@
-h4 {
-  color: Orange;
+body {
+  background-image: image-url("back.jpg");
+}
+
+#slider-box {
+  margin-top: 10%;
+  text-align: center;
+}
+.slide {
+  text-align: center;
+}
+.junle {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  background: #038F8F;/*背景色*/
+  padding: 0.3em;
+}
+.hint {
+  font-size: 45px;
+}
+
+a {
+  text-decoration: none;
+  background: #038F8F;
+  color:white;
+  padding:5px 10px;
+  border-radius: 10px;
+  font-family: 'Avenir','Arial';
+  font-size: 25px;
 }

@@ -1,26 +1,33 @@
-<h3>職位</h3>
-<%= @position %>
-
-<h3>研究分野</h3>
-<%= @field %>
-
-<h3>趣味</h3>
-<%= @hobby %>
-
-<h3>子供時代の夢</h3>
-<%= @dream %>
-
-<h3>座右の銘</h3>
-<%= @motto %>
-
-<h3>愛読書</h3>
-<%= @fbook %>
-
-<h3>学生へのメッセージ</h3>
-<%= @message %>
-
-</br></br></br>
+<div id="slider-box">
+<div class="bxSlider">
+    <div class="slide">
+      <p class="junle">ヒント1 : 職位</p>
+      <p class="hint"><%= @position %></p>
+    </div>
+    <div class="slide">
+      <p class="junle">ヒント2 : 研究分野</p>
+      <p class="hint"><%= @field %></p>
+    </div>
+    <div class="slide">
+      <p class="junle">ヒント3 : 趣味</p>
+      <p class="hint"><%= @hobby %></p>
+    </div>
+    <div class="slide">
+      <p class="junle">ヒント4 : 子供時代の夢</p>
+      <p class="hint"><%= @dream %></p>
+    </div>
+    <div class="slide">
+      <p class="junle">ヒント5 : 座右の銘</p>
+      <p class="hint"><%= @motto %></p>
+    </div>
+    <div class="slide">
+      <p class="junle">ヒント6 : 愛読書</p>
+      <p class="hint"><%= @fbook %></p>
+    </div>
+    <div class="slide">
+      <p class="junle">ヒント7 : 学生へのメッセージ</p>
+      <p class="hint"><%= @message %></p>
+    </div>
+</div>
 <%= link_to("答え", :action => "ans", :id => @id) %>
-
-
-<h4><a href="javascript:">jquery&css-test</a></h4>
+</div>

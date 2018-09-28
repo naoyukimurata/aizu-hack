@@ -4,8 +4,16 @@
     <title>ProfApp</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/earlyaccess/kokoro.css" %>
+    <%= stylesheet_link_tag "glide.core", :media => "all" %>
+    <%= stylesheet_link_tag "glide.theme", :media => "all" %>
+    <%= stylesheet_link_tag "jquery.bxslider", :media => "all" %>
     <%= partial_stylesheet_link_tag controller.controller_name, controller.action_name, @partial_css_disabled %>
+
     <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag "jquery.animations.min", 'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag "jquery.animations-spotlight", 'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag "jquery.bxslider.min", 'data-turbolinks-track': 'reload'%>
     <%= partial_js_link_tag controller.controller_name, controller.action_name, @partial_js_disabled %>
   </head>
 
